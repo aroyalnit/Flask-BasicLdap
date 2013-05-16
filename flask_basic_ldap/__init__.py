@@ -3,7 +3,7 @@ from functools import wraps
 from flask import request, Response
 
 class BasicLDAPAuth:
-    def __init__(self, ldap_basedn, ldap_userfilter, ldap_uri=''):
+    def __init__(self, ldap_basedn='', ldap_userfilter='', ldap_uri=''):
         self.ldap_basedn = ldap_basedn
         self.ldap_userfilter = ldap_userfilter
         self.ldap_uri = ldap_uri
